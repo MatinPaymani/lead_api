@@ -99,21 +99,6 @@ namespace LeadApiControllerTestFixture
 
 
 
-        //  Now implement further tests and LeadAPI  logic
-        //  ----------------------------------------------
-        //  * Fix any obvious errors and explain
-
-        //  * Add email-address validation when attempting to post/save/persist a lead 
-
-        //  * Make sure that correlationIds are associated with the lead when getting a lead by email and correlationId
-        //  * Implement logic that allows a lead to be saved with multiple correlation ID's
-
-        //  * Change the logic of the Get method to give a reasonable response if no lead was found
-        //  * Implement the delete functionality and support your implementation by unit-tests
-
-        //  * Introduce a logging mechanism in the LeadApiController that logs all requests
-        //  * Make sure that the logger will not log entries when the unit-tests are executed
-
-        //  * Looking forward to have a nice discussion about the solution and maybe extend it a bit further during our session
+       
     }
 }

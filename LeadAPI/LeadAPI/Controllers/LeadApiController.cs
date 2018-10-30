@@ -19,9 +19,6 @@ namespace LeadAPI.Controllers
     public class LeadApiController : ApiController
     {
       
-        //Saves a lead with name, email etc. Correlation ID can be an ID that is associated 
-        //with this lead e.g. a whitepaper id that was downloaded by the lead
-
         //api/LeadApi/bill@microsoft.com/456781284231
         [HttpGet,Route("{email}/{correlationId}")]
         public IHttpActionResult Get(string email, string correlationId)
@@ -166,18 +163,6 @@ namespace LeadAPI.Controllers
 
     public static class LeadMiddlewares
     {
-        public static bool IsEmailValid(string emailaddress)
-        {
-            try
-            {
-                MailAddress m = new MailAddress(emailaddress);
-                return true;
-            }
-            catch (FormatException)
-            {
-                return false;
-            }
-        }
         public static bool IsInUnitTest()
         {
             string testAssemblyName = "UnitTest";
